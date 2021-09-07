@@ -2,5 +2,5 @@
 
 alpha = ""
 for i in range(97, 123):
-	alpha += chr(i)
+    alpha += chr(i)
 print(alpha, end="")
