@@ -2,16 +2,12 @@
 import sys
 
 
-def argNone():
+if len(sys.argv) == 1:
     print("0 arguments.")
-
-
-def argOne():
+elif len(sys.argv) == 2:
     print("1 argument:")
     print("1: {}".format(sys.argv[1]))
-
-
-def argMore():
+elif len(sys.argv) >= 2:
     print("{} arguments:".format(len(sys.argv) - 1))
     i = 1
     count = 1
@@ -19,9 +15,3 @@ def argMore():
         print(str(count) + ":" + " " + sys.argv[i])
         i += 1
         count += 1
-if len(sys.argv) == 1:
-    argNone()
-elif len(sys.argv) == 2:
-    argOne()
-elif len(sys.argv) >= 2:
-    argMore()

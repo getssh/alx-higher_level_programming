@@ -7,4 +7,4 @@ res = 0
 while (i < (len(sys.argv))):
     res += int(sys.argv[i])
     i += 1
-print(res)
+print("{}".format(res))
