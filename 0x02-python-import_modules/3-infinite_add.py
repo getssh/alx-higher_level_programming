@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-import sys
-
-
+if __name__ == "__main__":
+    import sys
 i = 1
 res = 0
 while (i < (len(sys.argv))):
