@@ -8,6 +8,6 @@ def print_matrix_integer(matrix=[[]]):
         for j in range(len(matrix[i])):
             k = len(matrix[i])
             p = matrix[i][j]
-            print("{}".format(p), end=" " if j != (k - 1) else "\n")
+            print("{:d}".format(p), end=" " if j != (k - 1) else "\n")
             j += 1
         i += 1
