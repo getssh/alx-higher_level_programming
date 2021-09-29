@@ -1,15 +1,31 @@
 #!/usr/bin/python3
+"""Write a class Square that defines a square by:
+(based on 5-square.py)
+"""
+
+
 class Square:
+    """Square class with a private attribute -
+    size.
+
+    """
+
     def __init__(self, size=0, position=(0, 0)):
+        """Initializes the size variable as a private
+        instance artribute
+
+        """
         self.__size = size
         self.__position = position
 
     @property
     def size(self):
+        """Instantiation with optional size of square"""
         return self.__size
 
     @size.setter
     def size(self, size_value):
+        """Gets the size of the square"""
         self.__size = size_value
 
         if not isinstance(size_value, int):
@@ -19,10 +35,15 @@ class Square:
 
     @property
     def position(self):
+        """Get/set the current position of the square."""
         return self.__position
 
     @position.setter
     def position(self, size_value):
+        """Must be a tuple of 2 positive integers,
+        otherwise raise a TypeError exception
+
+        """
         self.__position = size_value
 
         if (not isinstance(size_value, tuple) or
@@ -32,9 +53,11 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
+        """Returns the current square area"""
         return self.__size ** 2
 
     def my_print(self):
+        """Prints the square with the '#' character."""
         if self.__size == 0:
             print("")
             return
@@ -46,6 +69,7 @@ class Square:
             print("")
 
     def __str__(self):
+        """Define the print() representation of a Square."""
         if self.__size != 0:
             [print("") for i in range(0, self.__position[1])]
         for i in range(0, self.__size):
