@@ -2,10 +2,12 @@
 """class
 
 """
+
+
 def is_kind_of_class(obj, a_class):
     """fun to find out
     bal hal
     """
-    if isinstance(obj, a_class):
+    if type(obj) == a_class or issubclass(object, a_class):
         return True
     return False
