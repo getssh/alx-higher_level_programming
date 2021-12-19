@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""script to get values from 2 tables
+"""
 import MySQLdb
 from sys import argv
 

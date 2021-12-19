@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""script to get state name and filter
+"""
 import MySQLdb
 from sys import argv
 

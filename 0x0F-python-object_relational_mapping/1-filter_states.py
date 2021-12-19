@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""script to print out names start with N from db
+"""
 import MySQLdb
 from sys import argv
 
