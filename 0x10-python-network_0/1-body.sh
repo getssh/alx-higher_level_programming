@@ -1,3 +1,3 @@
 #!/bin/bash
 #showing only body of 200 ok
-curl $1
+curl -sfL "$1" -X GET
