@@ -1,1 +1,3 @@
-curl -sI 35.237.36.195 | grep -i Content-Length | awk '{print $2}'
+#!/usr/bin/env bash
+#getting contenet length
+curl -sI $1 | grep -i Content-Length | awk '{print $2}'
