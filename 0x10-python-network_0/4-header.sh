@@ -1,3 +1,3 @@
 #!/bin/bash
-#header
-curl -sH "X-School-User-Id: 98" "$1"
+#adding custom header
+curl -sfL "$1" -H "X-School-User-Id:89"
