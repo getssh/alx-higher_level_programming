@@ -1,3 +1,3 @@
 #!/bin/bash
-#post request
-curl -sL -d "email=test@gmail.com&subject=I will always be here for PLD" -X POST "$1"
+#post with var
+curl -X POST -d 'email=test@gmail.com&subject=I will always be here for PLD' "$1"
