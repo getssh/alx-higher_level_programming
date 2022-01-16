@@ -1,6 +1,5 @@
-#!/bin/python3
-'''requesting a post request to server with values(variable&value)
-'''
+#!/usr/bin/python3
+'''requesting a post request to server with values(variable&value)'''
 
 
 if __name__ == '__main__':
