@@ -4,9 +4,7 @@
 
 
 if __name__ == '__main__':
-    from urllib.request import urlopen, Request
-    from urllib.parse import urlencode
-    import urllib
+    from urllib.request import urlopen
     from sys import argv
 
     url = argv[1]
