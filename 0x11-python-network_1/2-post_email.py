@@ -8,7 +8,7 @@ if __name__ == '__main__':
     from urllib.parse import urlencode
     from sys import argv
 
-    email_value = {'email':argv[2]}
+    email_value = {'email': argv[2]}
     data = urlencode(email_value)
     data = data.encode('UTF-8')
     req = Request(argv[1], data)
