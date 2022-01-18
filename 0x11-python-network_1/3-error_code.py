@@ -11,4 +11,4 @@ if __name__ == '__main__':
         with urlopen(argv[1]) as resp:
             print(resp.read())
     except URLError as e:
-        print(e.code)
+        print('Error code: {}'.format(e.code))
