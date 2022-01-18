@@ -9,7 +9,6 @@ if __name__ == '__main__':
 
     try:
         with urlopen(argv[1]) as resp:
-            print(resp.read())
-            print(resp.getcode())
+            print(resp.read().decode('UTF-8'))
     except URLError as e:
         print('Error code: {}'.format(e.code))
