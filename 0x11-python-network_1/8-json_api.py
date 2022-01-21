@@ -16,6 +16,6 @@ if __name__ == '__main__':
         if j_data is None:
             print('No result')
         else:
-            print('[{}] {}'.format(q['id'], q['name']))
+            print('[{}] {}'.format(j_data['id'], j_data['name']))
     except Exception:
         print('Not a valid JSON')
