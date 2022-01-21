@@ -13,7 +13,7 @@ if __name__ == '__main__':
     req = requests.post('http://0.0.0.0:5000/search_user', data=data)
     try:
         j_data = req.json()
-        if j_data['id'] is None:
+        if j_data is None or len(argv) < 2:
             print('No result')
         else:
             print('[{}] {}'.format(j_data['id'], j_data['name']))
