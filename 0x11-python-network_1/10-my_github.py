@@ -12,7 +12,10 @@ if __name__ == '__main__':
     params = {
         "state": "open",
     }
-    headers = {'Authorization': f'token {token}'}
+    headers = {
+              'Authorization': 'token {}'.format(token),
+              'Accept': 'application/vnd.github.v3+json',
+              }
     r = requests.get(query_url, headers=headers, params=params)
     data = r.json()
 
