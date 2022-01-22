@@ -8,7 +8,7 @@ if __name__ == '__main__':
 
     token = argv[2]
     user = argv[1]
-    query_url = f"https://api.github.com/users/{user}"
+    query_url = "https://api.github.com/users/{}".format(user)
     headers = {
               'Authorization': 'token {}'.format(token),
               'Accept': 'application/vnd.github.v3+json',
