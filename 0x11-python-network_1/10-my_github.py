@@ -14,6 +14,6 @@ if __name__ == '__main__':
     }
     headers = {'Authorization': f'token {token}'}
     r = requests.get(query_url, headers=headers, params=params)
-    data =r.json()
+    data = r.json()
 
     print(data['id'])
